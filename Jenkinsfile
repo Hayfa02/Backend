@@ -3,33 +3,16 @@ pipeline {
       stages {
         
   
-        stage("slack") {
+        stage("build ") {
          steps {
+             sh 'npm install'
+             sh 'npm start'
 
           }
         }
      
         
-          stage('Docker Build') {
-              steps {
-         
-      }
-    }
-          
-          
-          stage(' image  container') {
-             steps {
-               
-      }
-    }
-          
-          
-      stage('Test') {
-            steps {
-                
-            }
-        }
-          
+             
       }
 }
   
