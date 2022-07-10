@@ -1,4 +1,4 @@
-const Reservation = require("../models/Reservation");
+const Reservation = require("../Models/Reservation");
 const Stade = require("../Models/Stade");
 exports.AddReservation =async (req, res) => {
     let date=new Date(req.body.date) //
