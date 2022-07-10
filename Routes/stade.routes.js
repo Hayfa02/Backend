@@ -3,7 +3,7 @@ const router = express.Router();
 const Auth = require("../middlewares/auth");
 const proprietaireAuth = require("../middlewares/proprietaireAuth");
 const AdminAuth = require("../middlewares/adminAuth");
-const stadeController = require("../controllers/stadeController");
+const stadeController = require("../Controllers/stadeController");
 router.post('/add',proprietaireAuth,stadeController.ajoutStade)
 router.get('/all',stadeController.getStades)
 router.get('/demande',stadeController.getStadesDemande)
