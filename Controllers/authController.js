@@ -11,7 +11,7 @@ exports.login = async (req, res) => {
     if (!user) return res.status(404).json("Utilisateur n'existe pas");
     if (bcrypt.compareSync(password, user.password)) {
       if (user.emailConfirmer === false) return res.status(400).json( "Veuillez  Confirmer votre email" );
-      if (user.etatDeCompte === false) return res.status(400).json("votre compte a éte bloqué !");
+      if (user.etatDeCompte === false) return res.status(400).json("votre compte a éte bloqué !!");
       const payload = {
           id: user.id,
           prenom: user.prenom,
