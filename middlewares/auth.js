@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const User = require("../models/User");
+const User = require("../Models/User");
 module.exports = async function (req, res, next) {
   try {
     const token=req.headers.authorization.replace('Bearer ',"")
