@@ -1,6 +1,6 @@
 const Stade = require("../Models/Stade");
 const multer=require('multer');
-const User = require("../models/User");
+const User = require("../Models/User");
 const nodemailer = require('nodemailer');
 
 var storage = multer.diskStorage({
