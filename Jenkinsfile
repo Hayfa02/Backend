@@ -8,7 +8,7 @@ pipeline {
               steps {
              
 
-               sh 'docker build -t contnode '
+               sh 'docker build -t contnode .'
       }
     }
              
