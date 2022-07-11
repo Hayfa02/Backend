@@ -3,15 +3,13 @@ pipeline {
       stages {
         
   
-        stage("build ") {
-         steps {
-             sh 'npm install'
-             sh 'npm start'
-
-          }
-        }
-     
-        
+         
+          stage('Docker Build') {
+              steps {
+               sh 'sudo chmod 666 /var/run/docker.sock'
+               sh 'docker build -t contnode .'
+      }
+    }
              
       }
 }
