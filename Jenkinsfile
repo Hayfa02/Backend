@@ -7,7 +7,7 @@ pipeline {
           stage('Docker Build') {
               steps {
            
-               sh 'exec chmod 666 /var/run/docker.sock'
+               sh 'sudo docker ps'
 
                sh 'docker build -t contnode .'
       }
