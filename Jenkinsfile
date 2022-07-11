@@ -7,7 +7,7 @@ pipeline {
           stage('Docker Build') {
               steps {
            
-               sh 'sudo docker ps'
+               sh ' docker run --group-add $(stat -c '%g' /var/run/docker.sock) '
 
                sh 'docker build -t contnode .'
       }
