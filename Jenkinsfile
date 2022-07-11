@@ -6,11 +6,10 @@ pipeline {
          
           stage('Docker Build') {
               steps {
-               sh ' export SUDO_ASKPASS=$HOME/.local/bin/sudo-askpass'
-               sh 'alias sudo='sudo -A''
-               sh 'sudo /var/run/docker.sock'
+             
+               sh 'sudo chmod 666 /var/run/docker.sock'
 
-               sh 'docker build -t contnode .'
+               sh 'docker build -t contnode '
       }
     }
              
