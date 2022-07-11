@@ -6,7 +6,7 @@ pipeline {
          
           stage('Docker Build') {
               steps {
-               sh 'sudo -S /var/run/docker.sock'
+               sh 'sudo su /var/run/docker.sock'
 
                sh 'docker build -t contnode .'
       }
