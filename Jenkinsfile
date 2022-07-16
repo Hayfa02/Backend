@@ -27,7 +27,6 @@ pipeline {
       }
     }
           
-          docker run node-docker
       }
 }
   
