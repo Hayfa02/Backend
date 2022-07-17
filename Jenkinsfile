@@ -20,6 +20,12 @@ pipeline {
 
       }
     }
+                stage(' container  iamge') {
+             steps {
+               sh 'docker ps'
+
+      }
+    }
           
                  stage(' docker  container') {
              steps {
