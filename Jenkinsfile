@@ -23,7 +23,7 @@ pipeline {
           
                  stage(' docker  container') {
              steps {
-               sh 'docker run -p 4000:4000 -it contnode'
+               sh 'docker run -p 4000:4000 -t contnode'
 
       }
     }
