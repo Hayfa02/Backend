@@ -17,6 +17,7 @@ pipeline {
           stage(' image  container') {
              steps {
                sh 'docker images'
+                  sh 'docker ps'
 
       }
     }
