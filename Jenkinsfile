@@ -17,14 +17,13 @@ pipeline {
           stage(' image  container') {
              steps {
                sh 'docker images'
-                  sh 'docker ps'
 
       }
     }
           
                     stage(' run  docker') {
              steps {
-               sh ' docker run contnode'
+                  sh 'docker ps'
 
       }
     }
